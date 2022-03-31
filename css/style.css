@@ -18,169 +18,89 @@ body {
 	min-height: 100%;
 	overflow: hidden;
 }
-.header__sample-doggie {
-	max-width: 1440px;
+.main {
+	background: url("../img/BGImage.jpg") 0 0 no-repeat;
+	position: relative;
+	/* width: 100%;
+	height: 800px; */
 	margin: 0 auto;
+	max-width: 1440px;
+	padding-top: 391px;
+	padding-bottom: 200px;
 }
 .sample-doggie {
-	padding-top: 160px;
-	padding-bottom: 200px;
-	background: #f5f5f5 url("../img/BGImage.jpg") 0 0 no-repeat;
+	max-width: 1020px;
+	background: #5D62B5;
+	border-radius: 40px;
+	margin: 0 auto;
+	padding: 100px 0px 354px 0px;
+	position: relative;
+	top: -80px;
 }
 .sample-doggie__container {
-	position: relative;
-	border-radius: 40px;
-	max-width: 1020px;
+	width: 846px;
 	margin: 0 auto;
-	padding-top: 6.9%;
-	padding-left: 6.04%;
-	background: #5D62B5;
 }
-.sample-doggie__container::before {
+.sample-doggie::before {
 	content: "";
+	background: url("../img/StylizeCircles.svg") 0 0 no-repeat;
 	position: absolute;
-	display: block;
-	right: -76px;
-	top: -109px;
 	width: 201px;
 	height: 317px;
-	background: url("../img/StylizeCircles.svg") 0 0 no-repeat;
+	right: -76px;
+	top: -109px;
 }
-.title__subtitle {
-	font-weight: 700;
-	font-size: 12px;
-	line-height: 2;
-	letter-spacing: 2.5px;
-	text-transform: uppercase;
-	padding-left: 32px;
-	background: url("../img/Mark.svg") 0 0 no-repeat;
-	margin-bottom: 33px;
-}
-.title__text {
-	font-weight: 900;
-	font-size: 36px;
-	line-height: 1.16;
-	color: #fff;
-	max-width: 70%;
-	margin-bottom: 36px;
-}
-.sample-doggie__paragraph {
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.15px;
-	min-width: 90%;
-	margin-bottom: -45px;
-}
-.sample-doggie__img {
-	position: relative;
-	z-index: 2;
-	min-width: 92%;
-	top: 114px;
-}
-/* .block-img::before {
-	display: block;
+.sample-doggie::after {
 	content: "";
-	width: 100%;
-	height: 100%;
-	background: url("../img/Blob2.svg") bottom -87% right 90% / 75% no-repeat;
-	position: absolute;
-	top: -22%;
-	left: -13%;
-	z-index: 1;
-} */
-.block-img__container {
-	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
-	border-radius: 40px;
-	overflow: hidden;
-}
-.block-img__image {
-	width: 100%;
-}
-.block-img__content {
-	position: absolute;
-	z-index: -1;
-	top: -50px;
-	left: -50px;
-}
-.block-img__bold {
-	max-width: 100%;
-	min-height: 100%;
-}
-/* /* .sample-doggie::after {
-	content: "";
+	background: url("../img/Blob2.svg") 0 0 no-repeat;
 	position: absolute;
 	width: 665px;
 	height: 591px;
-	top: 225px;
-	left: -15px;
-	background: url("../img/Blob2.png") 0 0 no-repeat;
+	left: 51px;
+	bottom: -250px;
 }
-.sample-doggie__container {
-	padding: 100px 87px 0 87px;
-}
-.sample-doggie__content {
-	min-width: 846px;
-}
-.sample-doggie__subtitle {
-	margin: 0px 0px 33px 0px;
-}
-.subtitle {
-	color: #f5f5f5;
-	position: relative;
-}
-.subtitle__title {
+.sample-doggie__title {
+	font-weight: 700;
 	font-size: 12px;
-	line-height: 200%;
-	text-transform: uppercase;
+	line-height: 24px;
+	align-items: center;
 	letter-spacing: 2.5px;
-	font-weight: 700;
-	padding: 0px 0px 0px 32px;
-	
+	position: relative;
+	padding-left: 33px;
+	margin-bottom: 33px;
 }
-.subtitle__title::before {
+.sample-doggie__title::before {
 	content: "";
+	background: url("../img/Mark.svg") center no-repeat;
 	position: absolute;
-	top: -2;
+	width: 17px;
+	height: 16px;
 	left: 0;
-	width: 28px;
-	height: 27px;
-	background: url("../img/Mark.svg") 0 0 no-repeat;
-	transition: all 0.3s ease 0s;
+	top: 4px;
 }
-.subtitle__title:hover::before {
-	transform: scale(1.5);
-}
-.subtitle__text {
-	margin: 0px 0px 36px 0px;
+.sample-doggie__sub-title {
+	max-width: 583px;
+	font-weight: 900;
 	font-size: 36px;
-	line-height: 117%;
-	color: #ffffff;
-	font-weight: 700;
+	line-height: 42px;
+	margin-bottom: 36px;
 }
 .sample-doggie__paragraph {
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.15px;
-	color: #f5f5f5;
-	font-weight: 400;
 }
+/* .sample-doggie__content {
+} */
 .sample-doggie__image {
 	max-width: 846px;
-	margin: 0 auto;
-}
-.image-about__content {
-	position: absolute;
-	/* bottom: -55px;
-	z-index: 2; 
-}
-.image-about__doggie {
-	box-shadow: 0px 8px 16px rgb(38 38 38 / 24%), 0px 16px 24px rgb(38 38 38 / 20%);
+	height: 420px;
+	box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
 	border-radius: 40px;
-	max-width: 100%;
-} */
-
-
-
+	bottom: -120px;
+	position: absolute;
+	z-index: 1;
+}
 
 
