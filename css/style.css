@@ -1,12 +1,5 @@
 @import "null.css";
 
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900,&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Philosopher:regular,italic,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Marck+Script:regular&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lobster:regular&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Stalinist+One:regular&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Supermercado+One:regular&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700,900,&display=swap");
 
 body {
@@ -19,14 +12,11 @@ body {
 	overflow: hidden;
 }
 .main {
-	background: url("../img/BGImage.jpg") 0 0 no-repeat;
-	position: relative;
-	/* width: 100%;
-	height: 800px; */
-	margin: 0 auto;
-	max-width: 1440px;
-	padding-top: 391px;
+	max-width: 100%;
 	padding-bottom: 200px;
+}
+.main__image {
+	width: 100%;
 }
 .sample-doggie {
 	max-width: 1020px;
@@ -38,10 +28,10 @@ body {
 	top: -80px;
 }
 .sample-doggie__container {
-	width: 846px;
+	max-width: 846px;
 	margin: 0 auto;
 }
-.sample-doggie::before {
+.sample-doggie__container::before {
 	content: "";
 	background: url("../img/StylizeCircles.svg") 0 0 no-repeat;
 	position: absolute;
@@ -49,15 +39,6 @@ body {
 	height: 317px;
 	right: -76px;
 	top: -109px;
-}
-.sample-doggie::after {
-	content: "";
-	background: url("../img/Blob2.svg") 0 0 no-repeat;
-	position: absolute;
-	width: 665px;
-	height: 591px;
-	left: 51px;
-	bottom: -250px;
 }
 .sample-doggie__title {
 	font-weight: 700;
@@ -71,12 +52,16 @@ body {
 }
 .sample-doggie__title::before {
 	content: "";
-	background: url("../img/Mark.svg") center no-repeat;
+	background: url("../img/Mark.svg") center center no-repeat;
 	position: absolute;
 	width: 17px;
 	height: 16px;
-	left: 0;
+	left: 0px;
 	top: 4px;
+	transition: all 0.3s ease 0s;
+}
+.sample-doggie__title:hover::before {
+	transform: scale(1.9);
 }
 .sample-doggie__sub-title {
 	max-width: 583px;
@@ -91,10 +76,19 @@ body {
 	line-height: 24px;
 	letter-spacing: 0.15px;
 }
-/* .sample-doggie__content {
-} */
+.sample-doggie__content {
+}
+.sample-doggie__content::before {
+	content: "";
+	background: url("../img/Blob2.svg") 0px 0px no-repeat;
+	position: absolute;
+	width: 665px;
+	height: 591px;
+	left: 51px;
+	bottom: -250px;
+}
 .sample-doggie__image {
-	max-width: 846px;
+	max-width: 100%;
 	height: 420px;
 	box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
 	border-radius: 40px;
@@ -102,5 +96,3 @@ body {
 	position: absolute;
 	z-index: 1;
 }
-
-
